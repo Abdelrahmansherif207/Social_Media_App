@@ -1,7 +1,5 @@
 # WebSocket Chat Application
 
-![Project Screenshot](https://via.placeholder.com/800x400?text=WebSocket+Chat+App) <!-- Replace with actual screenshot -->
-
 A real-time chat application built with Node.js, Express, MongoDB, and WebSocket technology featuring authentication and post creation.
 
 ## ✨ Features
@@ -29,4 +27,18 @@ A real-time chat application built with Node.js, Express, MongoDB, and WebSocket
 **Other:**  
 ![WebSocket](https://img.shields.io/badge/WebSocket-Real--time-yellow)
 ![JWT](https://img.shields.io/badge/JWT-Authentication-blue)
+
+## 🖼️ UI Examples
+
+### Login Page
+![Login Page](./screenshots/login-page.png)
+
+### Register Page
+![Login Page](./screenshots/regitser-page.png)
+
+### Posts Feed
+![Posts Feed](./screenshots/posts.png)
+
+### Chat Interface
+![Chat Interface](./screenshots/chat-interface.png)
 
