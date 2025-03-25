@@ -31,14 +31,14 @@ A real-time chat application built with Node.js, Express, MongoDB, and WebSocket
 ## 🖼️ UI Examples
 
 ### Login Page
-![Login Page](./screenshots/login-page.png)
+![Login Page](./screenshots/login.png)
 
 ### Register Page
-![Login Page](./screenshots/regitser-page.png)
+![Login Page](./screenshots/regitser.png)
 
 ### Posts Feed
-![Posts Feed](./screenshots/posts.png)
+![Posts Feed](./screenshots/feed.png)
 
 ### Chat Interface
-![Chat Interface](./screenshots/chat-interface.png)
+![Chat Interface](./screenshots/chat.png)
 
