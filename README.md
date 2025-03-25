@@ -34,7 +34,7 @@ A real-time chat application built with Node.js, Express, MongoDB, and WebSocket
 ![Login Page](./screenshots/login.png)
 
 ### Register Page
-![Login Page](./screenshots/regitser.png)
+![Register Page](./screenshots/register.png)
 
 ### Posts Feed
 ![Posts Feed](./screenshots/feed.png)
