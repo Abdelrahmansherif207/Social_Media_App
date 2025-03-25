@@ -1,37 +1,122 @@
+:root {
+    --primary-color: #6020a4;
+    --background-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --border-color: #333333;
+    --error-color: #ff4444;
+}
+
 body {
-    background-color: #f0f0f0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .form-container {
-    width: 300px;
-    border: 1px solid #ccc;
+    background-color: var(--card-color);
     border-radius: 10px;
-    padding: 20px;
-    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color);
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.input-group input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
-.input-group input:focus {
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: #2a2a2a;
+    color: var(--text-color);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
     outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(29, 161, 242, 0.2);
 }
 
-.form-container button {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7b44b6;
+}
+
+#error {
+    color: var(--error-color);
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--secondary-text);
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--card-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
