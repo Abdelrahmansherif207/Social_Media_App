@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat Server</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="chat.css" />
+    </head>
+    <body>
+        <div class="heading">
+            <p>Welcome:<strong> <%= user.username %></strong></p>
+            <div class="nav">
+                <a href="/chat"
+                    ><i class="fas fa-comment-dots" style="font-size: 24px"></i
+                ></a>
+                <form action="http://localhost:3000/logout" method="get">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+        <hr />
+
+        <div class="chat-container">
+            <!-- Messages Container -->
+            <div class="messages-container">
+                <!-- Example Messages -->
+                <div class="message sent">
+                    <p>Hello! How are you?</p>
+                    <span>10:00 AM</span>
+                </div>
+                <div class="message received">
+                    <p>Hi! I'm good, thanks. How about you?</p>
+                    <span>10:01 AM</span>
+                </div>
+                <div class="message sent">
+                    <p>I'm doing great, thanks for asking!</p>
+                    <span>10:02 AM</span>
+                </div>
+            </div>
+
+            <!-- Input Container -->
+            <div class="input-container">
+                <input
+                    type="text"
+                    placeholder="Type your message..."
+                    id="messageInput"
+                />
+                <button>Send</button>
+            </div>
+        </div>
+    </body>
+    <script src="/wsc.js"></script>
+</html>
